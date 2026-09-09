@@ -1,0 +1,56 @@
+Setting Up a GitHub Repository and Making a First Commit
+Prerequisites
+Before starting, make sure you have:
+* A computer connected to the internet.
+* A GitHub account.
+* Git installed on the computer.
+* Visual Studio Code or another text editor.
+* Basic knowledge of opening folders and using a terminal.
+* A project folder that you want to upload to GitHub.
+Procedure
+Step 1: Open the project folder
+Open the folder containing your project files.
+Expected result: The project folder opens and its files are visible.
+Step 2: Open the terminal
+Open a terminal inside the project folder.
+Expected result: A terminal window opens with the project folder as the current location.
+Step 3: Initialize Git
+Run the command git init.
+Expected result: Git creates a hidden .git folder and initializes the project as a Git repository.
+Step 4: Check the repository status
+Run the command git status.
+Expected result: Git displays the files that are currently untracked or modified.
+Step 5: Add the project files
+Run the command git add ..
+Expected result: The project files are added to the Git staging area.
+Step 6: Check the staging area
+Run the command git status.
+Expected result: Git shows the project files as ready to be committed.
+Step 7: Create the first commit
+Run the command git commit -m "Initial commit".
+Expected result: Git creates the first commit and displays information about the committed files.
+Step 8: Create a GitHub repository
+Create a new repository on GitHub.
+Expected result: GitHub displays the new repository page.
+Step 9: Copy the repository URL
+Copy the HTTPS URL of the new GitHub repository.
+Expected result: The repository URL is copied and is ready to be used in the terminal.
+Step 10: Connect the local repository to GitHub
+Run git remote add origin YOUR-REPOSITORY-URL in the terminal, replacing YOUR-REPOSITORY-URL with the URL you copied.
+Expected result: The local Git repository is connected to the GitHub repository.
+Step 11: Rename the main branch
+Run the command git branch -M main.
+Expected result: The current branch is renamed to main.
+Step 12: Push the commit to GitHub
+Run the command git push -u origin main.
+Expected result: The first commit is uploaded to the GitHub repository.
+Step 13: Open the GitHub repository
+Open the repository page in your web browser.
+Expected result: The project files and the Initial commit message are visible on GitHub.
+Screenshot Description
+Include a screenshot showing the GitHub repository after the first commit has been pushed successfully. The screenshot should show the repository name, the uploaded project files, the main branch, and the Initial commit message.
+Troubleshooting
+Common Error: git is not recognized
+A beginner may see an error such as git is not recognized as an internal or external command. This usually means Git is not installed or Git was not added to the computer's PATH.
+Solution: Install Git, restart the terminal, and run git --version to confirm that Git is available.
+

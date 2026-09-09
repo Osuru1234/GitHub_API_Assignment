@@ -1,0 +1,42 @@
+API Reference: Create a New Task
+Endpoint
+Method: POST
+Path: /api/v1/projects/{projectId}/tasks
+Description
+This endpoint allows an authenticated user to create a new task inside a specific project. The request must include the task title, assignee ID, due date, and priority. A description may also be provided.
+Authentication
+Authentication is required.
+The client must provide a valid access token using the Authorization header.
+Request Headers
+HeaderTypeRequiredDescriptionAuthorizationstringYesBearer access token used to authenticate the user.Content-TypestringYesMust be application/json.Request Parameters
+Path Parameter
+NameTypeRequiredDescriptionprojectIdstringYesUnique identifier of the project where the task will be created.Query Parameters
+This endpoint does not require query parameters.
+Request Body
+NameTypeRequiredDescriptiontitlestringYesThe name or title of the task.descriptionstringNoAdditional information about the task.assigneeIdstringYesUnique ID of the user assigned to the task.dueDatestringYesDate when the task is due, using YYYY-MM-DD format.prioritystringYesTask priority. Allowed values are low, medium, or high.Example Request
+POST /api/v1/projects/proj_123/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
+Content-Type: application/json
+{
+  "title": "Complete project documentation",
+  "description": "Write and review the project documentation before submission.",
+  "assigneeId": "user_456",
+  "dueDate": "2026-09-15",
+  "priority": "high"
+}
+Successful Response
+HTTP 201 Created
+The task was successfully created.
+{
+  "id": "task_789",
+  "projectId": "proj_123",
+  "title": "Complete project documentation",
+  "description": "Write and review the project documentation before submission.",
+  "assigneeId": "user_456",
+  "dueDate": "2026-09-15",
+  "priority": "high",
+  "status": "todo",
+  "createdAt": "2026-09-08T08:45:00Z"
+}
+Response Codes
+HTTP CodeExplanation201 CreatedThe task was successfully created.400 Bad RequestThe request contains invalid or incorrectly formatted data.401 UnauthorizedThe authentication token is missing, expired, or invalid.403 ForbiddenThe user is authenticated but does not have permission to create a task in the project.404 Not FoundThe specified project or assignee cannot be found.409 ConflictThe request conflicts with an existing resource or project rule.422 Unprocessable EntityThe request format is valid, but one or more values fail validation.500 Internal Server ErrorAn unexpected error occurred on the server.
