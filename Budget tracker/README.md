@@ -1,64 +1,68 @@
- ## SpendWise Dashboard Shell
+# My Budget Tracker
 
-The project was extended to create the SpendWise Dashboard Shell using modern CSS layout techniques.
+## About the Project
 
-### Dashboard Features
+My Budget Tracker is a simple web project designed to help users organize and keep track of their expenses in one place.
 
-- Sidebar navigation menu
-- Dashboard header
-- Financial summary cards
-- Six spending category cards
-- Food
-- Transport
-- Rent
-- Entertainment
-- Savings
-- Utilities
+The project is being developed as part of my learning journey in web development.
 
-### CSS Grid
+## What I Have Built So Far
 
-CSS Grid is used for the overall dashboard layout and category card layout.
+So far, I have built:
 
-### Flexbox
+* A clear Budget Tracker homepage
+* An expense form
+* Expense name input
+* Amount input
+* Category selection
+* Expense table
+* Sample expense records
+* Responsive styling for different screen sizes
+* A page title
+* A favicon
+* Open Graph meta tags for better link previews
+* A responsive mobile layout
+* A public GitHub repository
+* A GitHub Pages deployment
 
-Flexbox is used for:
+## Categories
 
-- Sidebar navigation items
-- Header content
-- Financial summary cards
-- Category card content
+The expense tracker currently includes:
 
-### CSS Custom Properties
+* Food
+* Transport
+* Rent
+* Entertainment
+* Other
 
-The project uses CSS variables in `:root` for:
+## Technologies Used
 
-- Brand color
-- Accent color
-- Background color
-- Surface color
-- Primary text
-- Secondary text
-- Border color
+* HTML
+* CSS
+* Git
+* GitHub
+* GitHub Pages
 
-### Responsive Design
+## What's Coming Next
 
-A media query changes the dashboard to a single-column layout below 768px.
+JavaScript functionality starts next week.
 
-The responsive layout was tested using the browser DevTools Device Toolbar.
+The next stage of the project will make the Budget Tracker interactive. This will include adding expenses dynamically and improving how the application manages and displays budget information.
 
-### Card Micro-interactions
+## Project Status
 
-Dashboard cards include hover and keyboard focus effects using:
+The project currently focuses on the HTML structure, CSS styling, layout, and publishing the website using GitHub Pages.
 
-- `transform`
-- `box-shadow`
-- `transition`
+JavaScript functionality has not been added yet.
 
-The transition duration is 0.2 seconds (200ms).
+## Testing and Feedback
 
-### Dark Theme
+I tested the live website on another screen size to check the responsive layout.
 
-A dark theme was added using:
+I also asked another person to view the project and provide feedback on the design and usability.
 
-```css
-@media (prefers-color-scheme: dark)
+## Live Website
+
+GitHub Pages link:
+
+**Add my live GitHub Pages link here after publishing.**
